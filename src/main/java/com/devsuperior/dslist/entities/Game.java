@@ -24,7 +24,11 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
+	
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game() {
@@ -80,7 +84,7 @@ public class Game {
 		return platforms;
 	}
 
-	public void setPlatforms(String platforms) {
+	public void setPlatform(String platforms) {
 		this.platforms = platforms;
 	}
 
